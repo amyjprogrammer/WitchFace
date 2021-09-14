@@ -1,0 +1,127 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: url(https://images6.alphacoders.com/552/thumb-1920-552086.jpg) fixed center no-repeat;
+    background-size: 100% 100%;
+}
+
+h1 {
+    font: bold 75px Poppins, sans-serif;
+    text-align: center;
+    background: -webkit-linear-gradient(darkorange, darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    top: 150px;
+}
+
+.witch {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.head {
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
+    background-color: green;
+    position: relative;
+    z-index: 1;
+}
+
+.hat {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 135px solid black;
+    position: relative;
+    top: -230px;
+    z-index: 1;
+    left: -10px;
+}
+
+@-webkit-keyframes yellowRed{
+    0% {
+    background-color: yellow;
+    }
+    40% {
+        background-color: orangered;
+        height: 25px;
+        width: 33px;
+        transform: rotate(-5deg);
+    }
+    60% {
+        background-color: red;
+        height: 28px;
+        width: 35px;
+        transform: rotate(10deg);
+    }
+    100% {
+        background-color: firebrick;
+        height: 30px;
+        width: 40px;
+        transform: rotate(15deg);
+    }
+}
+
+.right-eye{
+    width: 23px;
+    height: 30px;
+    position: relative;
+    background-color: yellow;
+    border: 1px solid black;
+    left: 75px;
+    top: 40px;
+    border-radius: 50%;
+    transform: rotate(10deg);
+    -webkit-animation-name: yellowRed;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+.left-eye{
+    width: 21px;
+    height: 30px;
+    position: relative;
+    background-color: yellow;
+    border: 1px solid black;
+    left: 30px;
+    top: 10px;
+    border-radius: 50%;
+    transform: rotate(35deg);
+    -webkit-animation-name: yellowRed;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+    
+}
+
+.nose {
+    position: relative;
+    width: 5px;
+    height: 0;
+    left: 60px;
+    top: 10px;
+    border-left: 4px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 12px solid black;
+    
+}
+
+.mouth{
+    position: relative;
+    width: 40px;
+    height: 15px;
+    left: 45px;
+    top: 25px;
+    border: 1px solid black;
+    background-color: yellowgreen;
+    border-radius: 5px 25px 200px 125px;
+}
